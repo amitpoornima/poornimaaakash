@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phh"
+    tools:context=".Message" >
+
+    <EditText
+        android:id="@+id/sendto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:hint="Input number"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/sendmsgbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/msgbody"
+        android:layout_alignBottom="@+id/msgbody"
+        android:layout_alignParentRight="true"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="To : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/msgbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="37dp"
+        android:layout_toLeftOf="@+id/sendmsgbtn"
+        android:ems="10"
+        android:hint="Type Message"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

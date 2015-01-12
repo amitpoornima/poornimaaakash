@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phh"
+    tools:context=".SendEmail" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:text="To : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/inputmailaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:hint="Input email address"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/mailsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="Input subject" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Message : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/mailmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:hint="Type message"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ccmail"
+        android:layout_alignParentLeft="true"
+        android:text="CC :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="37dp"
+        android:text="Subject : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ccmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inputmailaddress"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/inputmailaddress"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Input one more email address"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/sendmailbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="55dp"
+        android:text="Send" />
+
+</RelativeLayout>

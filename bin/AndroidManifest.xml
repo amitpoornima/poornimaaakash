@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phonebook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.phonebook.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.phonebook.AddNewContact"
+            android:label="@string/title_activity_add_new_contact" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.ShowContacts"
+            android:label="@string/title_activity_show_contacts" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.UpdateContacts"
+            android:label="@string/title_activity_update_contacts" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.DeleteContact"
+            android:label="@string/title_activity_delete_contact" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.SearchContact"
+            android:label="@string/title_activity_search_contact" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.PersonDetails"
+            android:label="@string/title_activity_person_details" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.Message"
+            android:label="@string/title_activity_message" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.SendEmail"
+            android:label="@string/title_activity_send_email" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.OpenDialer"
+            android:label="@string/title_activity_open_dialer" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.LM_Fragment"
+            android:label="@string/title_activity_lm__fragment" >
+        </activity>
+        <activity
+            android:name="com.example.phonebook.CallLogViewer"
+            android:label="@string/title_activity_call_log_viewer" >
+        </activity>
+    </application>
+
+</manifest>

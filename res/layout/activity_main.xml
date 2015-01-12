@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phh"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/mainback"
+        style="@style/codeFont"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:onClick="callLog"
+        android:text="CallLog" />
+
+    <Button
+        android:id="@+id/allcontacts"
+        style="@style/codeFont"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="All" 
+        android:onClick="allContacts"/>
+
+    <Button
+        android:id="@+id/searchcontact"
+        style="@style/codeFont"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Search" 
+        android:onClick="searchContact"/>
+
+</RelativeLayout>
